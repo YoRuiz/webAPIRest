@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{13C7451B-891C-4B36-80D1-D80A75BCBE50}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2D8493E8-6B87-4DA7-8C3F-823BBFD906B3}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "webAPIRest", "src\webAPIRest\webAPIRest.xproj", "{73B2025E-DFFA-401D-8B50-4CB012CCA9AF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E3832131-A7F8-4111-8CBD-DCAE471212D5} = {E3832131-A7F8-4111-8CBD-DCAE471212D5}
+		{DFCD21A1-C8F3-447E-9A35-6BD573424031} = {DFCD21A1-C8F3-447E-9A35-6BD573424031}
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "webAPIRest_DAL", "src\webAPIRest_DAL\webAPIRest_DAL.xproj", "{DEF7146D-75F3-4391-B778-E21672DAF90E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E3832131-A7F8-4111-8CBD-DCAE471212D5} = {E3832131-A7F8-4111-8CBD-DCAE471212D5}
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "webAPIRest_BL", "src\webAPIRest_BL\webAPIRest_BL.xproj", "{DFCD21A1-C8F3-447E-9A35-6BD573424031}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E3832131-A7F8-4111-8CBD-DCAE471212D5} = {E3832131-A7F8-4111-8CBD-DCAE471212D5}
+		{DEF7146D-75F3-4391-B778-E21672DAF90E} = {DEF7146D-75F3-4391-B778-E21672DAF90E}
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "webAPIRest_Ent", "src\webAPIRest_Ent\webAPIRest_Ent.xproj", "{E3832131-A7F8-4111-8CBD-DCAE471212D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73B2025E-DFFA-401D-8B50-4CB012CCA9AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73B2025E-DFFA-401D-8B50-4CB012CCA9AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73B2025E-DFFA-401D-8B50-4CB012CCA9AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73B2025E-DFFA-401D-8B50-4CB012CCA9AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEF7146D-75F3-4391-B778-E21672DAF90E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEF7146D-75F3-4391-B778-E21672DAF90E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEF7146D-75F3-4391-B778-E21672DAF90E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEF7146D-75F3-4391-B778-E21672DAF90E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFCD21A1-C8F3-447E-9A35-6BD573424031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFCD21A1-C8F3-447E-9A35-6BD573424031}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFCD21A1-C8F3-447E-9A35-6BD573424031}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFCD21A1-C8F3-447E-9A35-6BD573424031}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3832131-A7F8-4111-8CBD-DCAE471212D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3832131-A7F8-4111-8CBD-DCAE471212D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3832131-A7F8-4111-8CBD-DCAE471212D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3832131-A7F8-4111-8CBD-DCAE471212D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{73B2025E-DFFA-401D-8B50-4CB012CCA9AF} = {13C7451B-891C-4B36-80D1-D80A75BCBE50}
+		{DEF7146D-75F3-4391-B778-E21672DAF90E} = {13C7451B-891C-4B36-80D1-D80A75BCBE50}
+		{DFCD21A1-C8F3-447E-9A35-6BD573424031} = {13C7451B-891C-4B36-80D1-D80A75BCBE50}
+		{E3832131-A7F8-4111-8CBD-DCAE471212D5} = {13C7451B-891C-4B36-80D1-D80A75BCBE50}
+	EndGlobalSection
+EndGlobal
