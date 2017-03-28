@@ -49,7 +49,14 @@ namespace webAPIRest
             app.UseApplicationInsightsRequestTelemetry();
 
             app.UseApplicationInsightsExceptionTelemetry();
+
+
+            DefaultFilesOptions options = new DefaultFilesOptions();
+            options.DefaultFileNames.Clear();
+            options.DefaultFileNames.Add("./Pages/index.html");
+            app.UseDefaultFiles(options);
             app.UseStaticFiles();
+
             app.UseMvc();
         }
     }

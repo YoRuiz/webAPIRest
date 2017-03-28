@@ -33,6 +33,7 @@ namespace webAPIRest_DAL
         public clsMyConnection()
         {
             //conexion con AZURE
+            //this.host = "uwpsample.database.windows.net";
             this.host = "uwpsample.database.windows.net";
 
             this.dataBase = "UWPSample";

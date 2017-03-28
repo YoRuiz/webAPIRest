@@ -130,9 +130,10 @@ function insertar() {
     if (p.fechaNac == "" || p.nombre == "" || p.apellidos == null) {
         pintaBienMal(0, "Error del servidor");
     } else {
-        pintaBienMal(1, "Inserción correcta");
+        
         xml.send(JSON.stringify(p));
         setTimeout(listar, 1000);
+        pintaBienMal(1, "Inserción correcta");
     }
     borrarInsert();
 
@@ -281,13 +282,16 @@ function pintaBienMal($i, $respuesta) {
             document.getElementById("contenedorError").innerHTML = $respuesta;
             document.getElementById("contenedorError").style.opacity = "1";
             document.getElementById("contenedorBien").style.opacity = "0";
-            //setTimeout(document.getElementById("contenedorError").style.opacity = "0", 4000);
+            setTimeout(function(){
+                document.getElementById("contenedorError").style.opacity = "0";}, 4000);
             break;
         case 1:
             document.getElementById("contenedorBien").innerHTML = $respuesta;
             document.getElementById("contenedorBien").style.opacity = "1";
             document.getElementById("contenedorError").style.opacity = "0";
-            //setTimeout(document.getElementById("contenedorBien").style.opacity = "0",4000);
+            setTimeout(function () {
+                document.getElementById("contenedorBien").style.opacity = "0";
+            }, 4000);
             break;
     }
 }
